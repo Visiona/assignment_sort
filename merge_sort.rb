@@ -1,7 +1,7 @@
 
 def merge(left_arr, right_arr)
   new_arr = []
-  if left_arr != nil && right_arr != nil
+  unless left_arr.nil? || right_arr.nil?
     while left_arr.any? || right_arr.any?
       if left_arr.empty?
         new_arr << right_arr[0]

@@ -4,9 +4,7 @@ def bubble_sort(array)
     temp_value = nil
     (array.length - 1).times do |idx|
       if array[idx] > array[idx + 1]
-        temp_value = array[idx]
-        array[idx] = array[idx + 1]
-        array[idx + 1] = temp_value
+        array[idx], array[idx + 1] = array[idx + 1], array[idx]
       end
     end
   end
